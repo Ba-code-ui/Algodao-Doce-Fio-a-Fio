@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja de Crochê</title>
+    <style>
+        body {
+            font-family: 'Mak', sans-serif;
+            background-color: #FFF1E7;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #F4B1C8;
+            color: #000000;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #6FA3EF;
+            font-family: 'Adlery Swash', cursive;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h1, h2 {
+            font-family: 'Caitlin', serif;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            flex: 1 1 calc(33.333% - 10px);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: auto;
+        }
+        form input, form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #C8A2C8;
+        }
+        form input[type="submit"] {
+            background-color: #FF6B6B;
+            color: #FFF1E7;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minha Loja de Crochê</h1>
+    </header>
+    <nav>
+        <a href="#loja">Loja</a>
+        <a href="#sobre">Sobre Mim</a>
+        <a href="#contato">Contato</a>
+        <a href="#galeria">Galeria</a>
+    </nav>
+    <div class="container">
+        <section id="loja">
+            <h2>Loja</h2>
+            <p>Bem-vindo à minha loja de crochê! Aqui você encontra peças exclusivas feitas à mão com muito carinho e dedicação.</p>
+        </section>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Eu sou [Seu Nome], apaixonada por crochê e artesanato. Meu trabalho é criar peças únicas que trazem conforto e beleza para o seu dia a dia.</p>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <div class="gallery">
+                <img src="exemplo1.jpg" alt="Exemplo 1">
+                <img src="exemplo2.jpg" alt="Exemplo 2">
+                <img src="exemplo3.jpg" alt="Exemplo 3">
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>Siga-me nas redes sociais!</p>
+        <a href="https://instagram.com/seuperfil" target="_blank">Instagram</a> |
+        <a href="https://facebook.com/seuperfil" target="_blank">Facebook</a>
+    </footer>
+</body>
+</html>
